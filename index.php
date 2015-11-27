@@ -143,11 +143,11 @@ include "config.php";
 				<form method="post" action="">
 					<div class="input-prepend">
 						<span class="add-on"><i class="icon-user"></i></span>
-						<input type="text" name="nome" value="<?php echo $result->nome; ?>" placeholder="Nome:" />
+						<input type="text" name="nome" value="<?php echo $result->nome; ?>" placeholder="Nome:" required />
 					</div>
 					<div class="input-prepend">
 						<span class="add-on"><i class="icon-envelope"></i></span>
-						<input type="text" name="email" value="<?php echo $result->email; ?>" placeholder="E-mail:" />
+						<input type="text" name="email" value="<?php echo $result->email; ?>" placeholder="E-mail:" required />
 					</div>
 					<br />
 					<input type="submit" name="atualizar" class="btn btn-primary" value="Atualizar dados">					
@@ -158,11 +158,11 @@ include "config.php";
 				<form method="post" action="">
 					<div class="input-prepend">
 						<span class="add-on"><i class="icon-user"></i></span>
-						<input type="text" name="nome" placeholder="Nome:" />
+						<input type="text" name="nome" placeholder="Nome:" required />
 					</div>
 					<div class="input-prepend">
 						<span class="add-on"><i class="icon-envelope"></i></span>
-						<input type="text" name="email" placeholder="E-mail:" />
+						<input type="text" name="email" placeholder="E-mail:" required />
 					</div>
 					<br />
 					<input type="submit" name="enviar" class="btn btn-primary" value="Cadastrar dados">					
